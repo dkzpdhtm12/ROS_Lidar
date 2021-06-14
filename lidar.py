@@ -13,7 +13,6 @@ count_right = 0
 
 def callback(data):
     laser_input = data.ranges
-    pub = rospy.Publisher('/front', String, queue_size=10)
     i = 0
 
     for laser_value in laser_input:
